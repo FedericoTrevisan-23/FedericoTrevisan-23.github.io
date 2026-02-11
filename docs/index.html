@@ -3,140 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito Personale - Progetti JS</title>
+    <title>Sito di Federico Trevisan</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Courier New', Courier, monospace; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 0;
+            background-color: #fff;
         }
 
-        .window-container {
-            width: 800px;
-            max-width: 95%;
-            min-height: 500px;
-            border: 4px solid black;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 10px 10px 0px rgba(0,0,0,0.2); 
+        header {
+            padding: 20px 40px;
+            border-bottom: 5px solid red; 
+            margin-bottom: 40px;
         }
 
-        .window-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 15px;
-            border-bottom: 4px solid red; 
-        }
-
-        .window-title {
-            font-size: 1.5rem;
-            font-weight: bold;
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
             text-transform: uppercase;
         }
 
-     
-        .window-controls {
-            display: flex;
-            gap: 5px;
-        }
-
-        .control-box {
-            width: 30px;
-            height: 30px;
-            border: 3px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 1.2rem;
-            line-height: 1;
-        }
-
-        .control-box:hover {
-            background-color: #ddd;
-        }
-
-        .window-content {
-            padding: 40px;
+        .grid-container {
+            padding: 0 40px;
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
-            align-content: flex-start;
+            gap: 30px;
         }
 
-        .project-card {
-            border: 3px solid red;
-            padding: 15px;
-            width: 250px;
-            border-radius: 2px; 
-            position: relative;
+        .card-esercizio {
+            border: 4px solid red;
+            width: 300px;
+            padding: 20px;
+            background: white;
         }
 
-        .project-card h2 {
+        .card-esercizio h2 {
             margin-top: 0;
+            font-size: 2rem;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
             margin-bottom: 15px;
-            font-size: 1.5rem;
-            text-decoration: underline;
         }
 
-        .project-card ul {
-            list-style-type: none;
+        .card-esercizio ul {
+            list-style: none;
             padding: 0;
             margin: 0;
+            font-size: 1.1rem;
         }
 
-        .project-card li {
+        .card-esercizio li {
             margin-bottom: 8px;
-            padding-left: 10px;
-            border-left: 2px solid black; 
         }
 
-        .project-card a {
+        .card-esercizio a {
             text-decoration: none;
             color: black;
             font-weight: bold;
-            transition: color 0.2s;
+            display: block; 
         }
 
-        .project-card a:hover {
-            color: red;
+        .card-esercizio a:hover {
+            color: red; 
         }
 
     </style>
 </head>
 <body>
 
-    <div class="window-container">
+    <header>
+        <h1>Sito di Federico Trevisan</h1>
+    </header>
+
+    <div class="grid-container">
         
-        <div class="window-header">
-            <div class="window-title">Sito di Federico Trevisan</div>
-            <div class="window-controls">
-                <div class="control-box">_</div> <div class="control-box">□</div> <div class="control-box">X</div> </div>
+        <div class="card-esercizio">
+            <h2>ES_N</h2>
+            <ul>
+                <li><a href="codice.html">- Codice</a></li>
+                <li><a href="consegna.txt">- Consegna</a></li>
+                <li><a href="visiva.html">- Rappresentazione visiva</a></li>
+            </ul>
         </div>
-
-        <div class="window-content">
-
-            <div class="project-card">
-                <h2>ES_N</h2>
-                <ul>
-                    <li><a href="#">- Codice</a></li>
-                    <li><a href="#">- Consegna</a></li>
-                    <li><a href="#">- Rappresentazione Visiva</a></li>
-                </ul>
-            </div>
-            </div>
-    </div>
+        </div>
 
 </body>
 </html>
